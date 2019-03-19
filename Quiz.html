@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.9.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.9.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="Website Builder Description">
+  
+  <title>QUIZ</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="header12 cid-rl6rOfTyqe mbr-fullscreen" id="header12-g">
+<script>
+var score=0;
+function quizresult(form){
+
+    alert("Your Quiz has been Submitted Successfuly!");
+ //-start of-test of cheked answers
+	
+    if ( document.getElementById("r11").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r21").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r32").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r42").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r52").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r62").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r72").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r83").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r93").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+	    if ( document.getElementById("r101").checked) {
+        score=score+2;}
+	else{score=score-1;}
+	
+
+	
+	
+	
+//-end of-test of cheked answers
+	if(score>=10) 
+	{document.write("<body style='background-color:#64FE2E'> <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>");}
+	else 
+	{document.write("<body style='background-color:#FF0000'></body>");}
+document.write("<h1 style='text-align:center; color:#000000' >Submitted Successfuly </h1>"+"<h2 style='text-align:center; color: #0B0B61'>Your Score is :" +score+"</h2>"+"<a target='_blank' href='answer.html' style='text-decoration:none; color: yellow;'><h1 style='text-align:center' >ANSWER </h1></a>");
+ 
+    }
+
+function refresh(){
+    
+    location.reload();
+
+}</script>
+    
+
+    
+
+    <div class="container  ">
+            <div class="media-container">
+                <div class="col-md-12 align-center">
+                    <h1 class="mbr-section-title pb-3 mbr-white mbr-bold mbr-fonts-style display-1">
+                        Start Your Test</h1>
+                    
+                    
+
+              
+     	
+		 
+		 
+		
+    
+		<div><p>Time left = <span id="timer" style="font-style: italic;color: red">4:57</span></p></div>
+   	<div class="content-display">
+     <script>
+		document.getElementById('timer').innerHTML =05 + ":" + 00;
+		startTimer();
+
+function startTimer() {
+  var presentTime = document.getElementById('timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  if(s==0 && m==0){quizresult(this.form);}
+  document.getElementById('timer').innerHTML =
+    m + ":" + s;
+  setTimeout(startTimer, 1000);
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
+		</script>
+        <div align="left"> 
+    <form id="frm" method="GET" action="" name="quiz-html">
+       <p style="font-size: 20em;color:black;"> 
+        </p><ol type="2">
+          <li>Who won the premier league 2017? </li>
+          	<label><input type="radio" value="a1" name="q1" id="r11">(A) Chelsea</label>
+            <label><input type="radio" value="b1" name="q1" id="r12">(B) Arsenal</label>
+            <label><input type="radio" value="c1" name="q1" id="r13">(C) Liverpool</label>
+            
+       
+        <li>Who won the community shield 2018?</li>
+            
+            <label><input type="radio" value="a2" name="q2" id="r21">(A) Manchester City</label>
+            <label><input type="radio" value="b2" name="q2" id="r22">(B) Chelsea</label>
+            <label><input type="radio" value="c2" name="q2" id="r23">(C) Real madrid </label>
+            
+            
+            
+        
+        <li>Premier league top scorers all time?</li>
+            
+            <label><input type="radio" value="a3" name="q3" id="r31">(A) Wayne Rooney</label>
+            <label><input type="radio" value="b3" name="q3" id="r32">(B) Alan shearer</label>
+			<label><input type="radio" value="c3" name="q3" id="r33">(C) Andrew Cole </label>
+            
+    
+        <li>How many clubs based in London played in the first FA premier League in season 1992-93?</li>
+            
+            <label><input type="radio" value="a4" name="q4" id="r41">(A) 7 </label>
+            <label><input type="radio" value="b4" name="q4" id="r42">(B) 6 </label>
+            <label><input type="radio" value="c4" name="q4" id="r43">(C) 8 </label>
+            
+            
+        <li>Who was the Premiership's top scorer in 1993/94, the season Manchester United won the league?</li>
+            
+            <label><input type="radio" value="a5" name="q5" id="r51">(A) Ronaldo</label>
+            <label><input type="radio" value="b5" name="q5" id="r52">(B) Andy Cole</label>
+            <label><input type="radio" value="c5" name="q5" id="r53">(C) Wayne Rooney</label>
+        <li>What happens to the teams that finish in the bottom 3 of the Premier League table at the end of each season?</li>
+
+          
+          <label><input type="radio" value="a6" name="q6" id="r61">(A) Only last team get relegated</label>
+            <label><input type="radio" value="b6" name="q6" id="r62">(B) They are all relegated </label>
+            <label><input type="radio" value="c6" name="q6" id="r63">(C) Only 2 of the bottom teams gets relegated </label>
+
+            
+        
+        <li>Which team were the 2001-02 League Champions?</li>
+            
+            <label><input type="radio" value="a7" name="q7" id="r71">(A) Liverpool</label>
+            <label><input type="radio" value="b7" name="q7" id="r72">(B) Arsenal</label>
+            <label><input type="radio" value="c7" name="q7" id="r73">(C) Manchester United</label>
+
+        
+        <li>Which club is nicknamed the toffees?</li>
+            
+            <label><input type="radio" value="a8" name="q8" id="r81">(A) Burnley FC </label>
+            <label><input type="radio" value="b8" name="q8" id="r82">(B) Southampton</label>
+            <label><input type="radio" value="c8" name="q8" id="r83">(C) Everton</label>
+            
+         
+                
+       
+        <li>In which year did the FA Premier League begin?</li>
+            
+            <label><input type="radio" value="a9" name="q9" id="r91">(A) 2000</label>
+            <label><input type="radio" value="b9" name="q9" id="r92">(B) 1990</label>
+            <label><input type="radio" value="c9" name="q9" id="r93">(C) 1992</label>
+            
+        
+        <li>Who won the first ever Premier League title in the 1992-93 season?</li>
+            
+            <label><input type="radio" value="a10" name="q10" id="r101">(A) Manchester United</label>
+            <label><input type="radio" value="b10" name="q10" id="r102">(B) Liverpool</label>
+			<label><input type="radio" value="c10" name="q10" id="r103">(C) Arsenal</label>
+         
+
+           
+        </ol>
+        </form></div> 
+        <p></p> 
+        <center> <input type="button" id="submit" value="Submit" name="btn" onclick="quizresult(this.form)" style="color: black; font-size: 3em; font-weight:bold; background:#F9F9F9; font-family: Vijaya; border-top-left-radius: 15px; border-bottom-left-radius: 15px; border-top-right-radius: 15px;  border-bottom-right-radius: 15px;">   
+        
+        <input type="reset" value="Reset" name="reset" onclick="refresh()" style="color: red; font-size: 3em; font-weight:bold; background:#F9F9F9; font-family: Vijaya; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px;  border-bottom-right-radius: 10px;">
+        </center>    
+   
+    
+    
+    </div>
+         
+
+                        
+
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</div></div></div></section>
+
+
+  <section class="engine"><a href="https://mobirise.info/g">how to build a website</a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
